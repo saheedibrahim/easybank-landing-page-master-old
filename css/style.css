@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+.header, .Next-generation, .why-choose, .Latest-Articles, .footer{
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.Next-generation{
+    padding-right: 0;
+}
+.Home{
+    float: left;
+    margin-right: 10%;
+}
+ul {
+    list-style-type: none;
+}
+#menu li{
+    display: inline;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #DBDCE1;
+}
+.header .Request-button, .all-rights{
+    float: right;
+    margin-right: 10%;
+}
+.Request-button{
+    background-image: linear-gradient(to right, #31CF6C, #2BB9CF);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+} 
+.Next-generation{
+    background-color: #FAFAFA;
+    min-height: 600px;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-position: 110% 0%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+#Next-generation{
+    padding-top: 100px;
+}
+.why-choose{
+    background-color: #F4F5F7;
+}
+.Latest-Articles{
+    background-color: #FAFAFA;
+}
+.mockups-image{
+    float: right;
+    margin-left: 10%;
+    max-height: 700px;
+    max-width: 700px;
+}
+.banking-icon{
+    float: left;
+    width: 20%;
+    margin-right: 50px;
+}
+.body-icon{
+    width: 50px;
+}
+.body-image{
+    float: left;
+    width: 20%;
+    margin-right: 50px;
+}
+.body-images{
+    width: 100%;
+}
+.footer{
+    background-color: #2D314E;
+}
+.footer-left{
+    float: left;
+    width: 25%;
+}
+/*.footer-logo{
+    filter: brightness(550%);
+    margin-top: 20px;
+}*/
+.footer-icons{
+    color: #ffffff;
+}
+.footer-items li{
+    display: inline;
+    margin-left: 20%;
+    /* margin-right: 25%; */
+}
+.all-rights{
+    float: right;
+}
+.footer-button{
+    float: right;
+}
+.copyright{
+    float: right;
+    color: #DBDCE1;
+}
+
+.clear-fix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.Next-generation{
+}
+#Next-generation{
+    font-size: 80px;
+}
+.menu-home{
+    
+}
+
+
+
+
+/*.header{
+    display: grid;
+}
+.Easybank-logo{
+    justify-self: left;
+}
+.menu{
+    background-color: brown;
+    justify-self: center;
+}
+.Request-Invite{
+    background-color: blue;
+    justify-self: right;
+}
+.header-menu{
+    justify-content: center;
+}
+/*#Request-Invite button{
+    justify-self: right;
+    margin-right: 50px;
+    width:150px;
+    padding: 10px;
+    border-radius: 20px;
+}*/
