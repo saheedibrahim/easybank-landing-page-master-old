@@ -1,12 +1,15 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .header, .Next-generation, .why-choose, .Latest-Articles, .footer{
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
-.Next-generation{
-    padding-right: 0;
+.header{
+    /* border: 5px solid; */
+    margin: 0;
 }
 .Home{
     float: left;
@@ -15,17 +18,18 @@
 ul {
     list-style-type: none;
 }
-#menu li{
+li{
     display: inline;
+}
+#menu li{
     margin-right: 20px;
 }
 a{
     text-decoration: none;
     color: #DBDCE1;
 }
-.header .Request-button, .all-rights{
+.header .Request-button, .all-rights .Request-button{
     float: right;
-    margin-right: 10%;
 }
 .Request-button{
     background-image: linear-gradient(to right, #31CF6C, #2BB9CF);
@@ -34,37 +38,68 @@ a{
     text-align: center;
 } 
 .Next-generation{
+    position: relative;
     background-color: #FAFAFA;
-    min-height: 600px;
     background-image: url("../images/bg-intro-desktop.svg");
-    background-position: 110% 0%;
+    background-position: 110% 40%;
     background-repeat: no-repeat;
     background-size: 50%;
+} 
+.Next-generate{
+    margin-right: 615px;
+}
+.mockups-image-box{
+    position: absolute;
+    right: 0;
+    max-width: 500px;
+    /* border: 5px solid; */
+    overflow-x: hidden;
+}
+.mockups-image{
+    width: 600px;
+    margin-top: -100px;
+    height: 500px;
 }
 #Next-generation{
-    padding-top: 100px;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+.Next-generate-button{
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 .why-choose{
     background-color: #F4F5F7;
+    border: 5px solid;
+}
+.easybank{
+    padding-top: 40px;
+    font-size: 30px;
+}
+.leverage{
+    margin-right: max(600px);
 }
 .Latest-Articles{
     background-color: #FAFAFA;
 }
-.mockups-image{
-    float: right;
-    margin-left: 10%;
-    max-height: 700px;
-    max-width: 700px;
+.icon-images{
+    border: 5px solid;
 }
 .banking-icon{
     float: left;
     width: 20%;
-    margin-right: 50px;
+    margin-right: 40px;
+    border: 5px solid;
+}
+.open-api-icon{
+    margin-right: 0;
 }
 .body-icon{
     width: 50px;
 }
-.body-image{
+.body-image-box{
     float: left;
     width: 20%;
     margin-right: 50px;
@@ -77,7 +112,7 @@ a{
 }
 .footer-left{
     float: left;
-    width: 25%;
+    /* width: 25%; */
 }
 /*.footer-logo{
     filter: brightness(550%);
@@ -87,14 +122,10 @@ a{
     color: #ffffff;
 }
 .footer-items li{
-    display: inline;
     margin-left: 20%;
     /* margin-right: 25%; */
 }
 .all-rights{
-    float: right;
-}
-.footer-button{
     float: right;
 }
 .copyright{
@@ -107,39 +138,6 @@ a{
     clear: both;
     display: table;
 }
-.Next-generation{
-}
-#Next-generation{
-    font-size: 80px;
-}
 .menu-home{
     
 }
-
-
-
-
-/*.header{
-    display: grid;
-}
-.Easybank-logo{
-    justify-self: left;
-}
-.menu{
-    background-color: brown;
-    justify-self: center;
-}
-.Request-Invite{
-    background-color: blue;
-    justify-self: right;
-}
-.header-menu{
-    justify-content: center;
-}
-/*#Request-Invite button{
-    justify-self: right;
-    margin-right: 50px;
-    width:150px;
-    padding: 10px;
-    border-radius: 20px;
-}*/
