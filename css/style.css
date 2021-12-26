@@ -4,12 +4,12 @@
     margin: 0;
 }
 .header, .Next-generation, .why-choose, .Latest-Articles, .footer{
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: max(13%);
+    padding-right: max(13%);
 }
 .header{
-    /* border: 5px solid; */
-    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .Home{
     float: left;
@@ -52,7 +52,6 @@ a{
     position: absolute;
     right: 0;
     max-width: 500px;
-    /* border: 5px solid; */
     overflow-x: hidden;
 }
 .mockups-image{
@@ -66,64 +65,86 @@ a{
     padding-bottom: 10px;
 }
 .Next-generate-button{
-    margin-bottom: 0;
     padding-top: 30px;
     padding-bottom: 50px;
 }
 .why-choose{
     background-color: #F4F5F7;
-    border: 5px solid;
 }
 .easybank{
     padding-top: 40px;
     font-size: 30px;
 }
+.banking-icon{
+    float: left;
+    width: 23%;
+    margin-right: 15px;
+}
+.banking-icon:last-child{
+    width: 24%;
+}
+.icon{
+    width: 50px;
+}
+.icon-body{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+.icon-heading{
+    padding-bottom: 10px;
+}
 .leverage{
-    margin-right: max(600px);
+    margin-right: 45%;
 }
 .Latest-Articles{
     background-color: #FAFAFA;
 }
-.icon-images{
-    border: 5px solid;
-}
-.banking-icon{
-    float: left;
-    width: 20%;
-    margin-right: 40px;
-    border: 5px solid;
-}
-.open-api-icon{
-    margin-right: 0;
-}
-.body-icon{
-    width: 50px;
-}
 .body-image-box{
     float: left;
-    width: 20%;
-    margin-right: 50px;
+    width: 24%;
+    margin-right: 8px;
+}
+.Latest-Articles h1{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.image-heading{
+    padding-bottom: 10px;
+}
+.image-heading:hover{
+    background-color: #86C2AC;
+    cursor: pointer;
 }
 .body-images{
     width: 100%;
+    height: max(150px);
+}
+.body-images-body{
+    padding: 15px;
+}
+.Author{
+    padding-bottom: 5px;
 }
 .footer{
     background-color: #2D314E;
+    padding-top: 10px;
 }
 .footer-left{
     float: left;
     /* width: 25%; */
 }
-/*.footer-logo{
+.footer-logo{
     filter: brightness(550%);
-    margin-top: 20px;
-}*/
+    margin-bottom: 20px;
+}
 .footer-icons{
     color: #ffffff;
 }
 .footer-items li{
-    margin-left: 20%;
-    /* margin-right: 25%; */
+    margin-left: 25%;
+}
+.footer-items li:hover{
+    background-color: #308C79;
 }
 .all-rights{
     float: right;
@@ -131,13 +152,11 @@ a{
 .copyright{
     float: right;
     color: #DBDCE1;
+    padding-top: 20px;
 }
 
 .clear-fix::after{
     content: "";
     clear: both;
     display: table;
-}
-.menu-home{
-    
 }
