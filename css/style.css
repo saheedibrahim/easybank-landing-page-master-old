@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-.header, .Next-generation, .why-choose, .Latest-Articles, .footer{
+.container{
     padding-left: max(13%);
     padding-right: max(13%);
 }
@@ -103,6 +103,8 @@ a{
     float: left;
     width: 24%;
     margin-right: 8px;
+    background-color: #FFFFFF;
+    /* padding: 30px; */
 }
 .Latest-Articles h1{
     padding-top: 20px;
@@ -120,7 +122,7 @@ a{
     height: max(150px);
 }
 .body-images-body{
-    padding: 15px;
+    padding: 25px;
 }
 .Author{
     padding-bottom: 5px;
@@ -159,4 +161,41 @@ a{
     content: "";
     clear: both;
     display: table;
+}
+
+@media (max-width: 600px){
+    li{
+        display: block;
+    }
+    .header .Request-button{
+        visibility: hidden;
+    }
+    .mockups-image-box{
+        position: static;
+    } 
+    .Next-generate{
+        margin-right: 0;
+    }
+    .mockups-image{
+        width: 100%;
+    }
+    .body-image-box, .banking-icon, .leverage, 
+    .banking-icon:last-child, .footer-left, .all-rights, .copyright, .all-rights .Request-button{
+        float: none;
+        width: 100%;
+        margin-right: 8px;
+    }
+    .banking-icon, .Next-generate, .why-choose, .footer{
+        text-align: center;
+    }
+    .footer-items li{
+        margin-left: 0;
+    }
+    .all-rights .Request-button{
+        /* margin-top: 380px;
+        margin-bottom: 380px; */
+    }
+    .body-image-box{
+        margin-bottom: 20px;
+    }
 }
