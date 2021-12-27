@@ -104,7 +104,6 @@ a{
     width: 24%;
     margin-right: 8px;
     background-color: #FFFFFF;
-    /* padding: 30px; */
 }
 .Latest-Articles h1{
     padding-top: 20px;
@@ -133,7 +132,6 @@ a{
 }
 .footer-left{
     float: left;
-    /* width: 25%; */
 }
 .footer-logo{
     filter: brightness(550%);
@@ -162,13 +160,52 @@ a{
     clear: both;
     display: table;
 }
+.hamburger-icon{
+    display: none;
+}
+#media-menu{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: 80%;
+    margin-top: 30px;
+    padding: 40px ;
+    text-align: center;
+    line-height: 40px;
+    z-index: 1;
+    right: 10%;
+}
 
 @media (max-width: 600px){
+    .Next-generation{
+        background-position: -10% -30%;
+        background-size: 800px 380px;
+    }
+    .mockups-image{
+        height: 400px;
+    }
+    .hamburger-icon{
+        display: block;
+    }
+    .close-icon{
+        display: none;
+        position: absolute;
+        margin-top: -20px;
+        background-color: #ffffff;
+        padding-left: 20px;
+    }
+    #menu{
+        display: none;
+    }
     li{
         display: block;
     }
+        .hamburger-icon:hover #media-menu, .hamburger-icon:hover .close-icon{
+        cursor: pointer;
+        display: block;
+    }
     .header .Request-button{
-        visibility: hidden;
+        display: none;
     }
     .mockups-image-box{
         position: static;
@@ -179,8 +216,8 @@ a{
     .mockups-image{
         width: 100%;
     }
-    .body-image-box, .banking-icon, .leverage, 
-    .banking-icon:last-child, .footer-left, .all-rights, .copyright, .all-rights .Request-button{
+    .body-image-box, .banking-icon, .leverage, .banking-icon:last-child, .footer-left, .all-rights, .copyright,
+     .all-rights .Request-button{
         float: none;
         width: 100%;
         margin-right: 8px;
@@ -190,12 +227,15 @@ a{
     }
     .footer-items li{
         margin-left: 0;
-    }
-    .all-rights .Request-button{
-        /* margin-top: 380px;
-        margin-bottom: 380px; */
+        line-height: 30px;
     }
     .body-image-box{
         margin-bottom: 20px;
+    }
+    .header-lists{
+        float: right;
+    }
+    .all-rights{
+        margin-top: 20px;
     }
 }
